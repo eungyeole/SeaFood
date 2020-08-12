@@ -6,7 +6,17 @@ const Header = memo( () => {
 
     return (
         <>
-            <div className="test">안녕하세요</div>
+            <header>
+                <div className="logo">
+                   adadad
+                </div>
+                <div className="search">
+                    <input type="text" placeholder="검색어를 입력"/>
+                </div>
+                <div>
+
+                </div>
+            </header>
         </>
     );
 });
