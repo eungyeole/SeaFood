@@ -2,8 +2,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const { hot } = require('react-hot-loader/root');
 
-const Header = require('./Header');
+const App = require('./src/components/App');
+const Hot = hot(App);
 
-const Hot = hot(Header);
-
-ReactDOM.render(<Hot />, document.querySelector('#root'));
+ReactDOM.render(<Hot></Hot>, document.querySelector('#root'));

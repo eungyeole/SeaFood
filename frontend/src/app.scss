@@ -2,6 +2,7 @@ $red: #fa5252;
 
 body{
     margin: 0;
+    margin: 0 30px;
 }
 header{
     display: flex;
@@ -11,7 +12,6 @@ header{
 .logo {
     font-size: 22px;
     font-weight: bold;
-    padding-left: 30px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ header{
 .search{
     background: #F8F8F7;
     border-radius: 5px;
-    width: 300px;
+    width: 500px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -27,8 +27,15 @@ header{
 }
 .search input{
     border: none;
-    width: 280px;
+    width: 480px;
     height: 30px;
     outline: none;
     background: #F8F8F7;
+}
+.profile-img{
+    border-radius: 50%;
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 32px;
 }
