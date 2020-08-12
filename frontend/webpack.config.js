@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     devtool: 'eval',
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
 
     entry: {
@@ -30,7 +30,20 @@ module.exports = {
                     'react-hot-loader/babel',
                 ],
             }
-        }],
+        },
+        {
+            test: /\.css$/,
+            use: ['style-laoder', 'css-loader']
+        },
+        {
+            test: /\.scss/,
+            loaders: [
+                require.resolve( 'style-loader' ),
+                require.resolve( 'css-loader' ),
+                require.resolve( 'sass-loader' )
+            ]
+        }
+    ],
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({ debug: true }),
