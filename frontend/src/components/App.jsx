@@ -3,6 +3,7 @@ const { useState, useRef, memo } = React;
 require('../app.scss');
 const Header = require('./Header');
 const Slide = require('./Slide');
+const Productlist = require('./productlist');
 
 const App = memo( () => {
 
@@ -11,6 +12,7 @@ const App = memo( () => {
             <div>
                 <Header></Header>
                 <Slide></Slide>
+                <Productlist></Productlist>
             </div>
         </>
     );

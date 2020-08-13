@@ -2,15 +2,15 @@ const React = require('react');
 const { useState, useRef, memo } = React;
 require('../app.scss');
 
-const Slide = memo( () => {
+const Productlist = memo( () => {
 
     return (
         <>
-            <div className="slide">
+            <div>
                 
             </div>
         </>
     );
 });
 
-module.exports = Slide;
+module.exports = Productlist;
