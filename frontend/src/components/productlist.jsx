@@ -6,7 +6,7 @@ const Productlist = memo( () => {
 
     return (
         <>
-            <div>
+            <div className="productlist">
                 
             </div>
         </>
