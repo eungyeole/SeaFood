@@ -5,10 +5,10 @@ const { Motion, spring } = require('react-motion');
 
 const Header = memo( () => {
 
-    const [width, setWidth] = useState(100);
+    const [width, setWidth] = useState(450);
 
     const animate = () => {
-        setWidth( width === 500 ? 100 : 500);
+        setWidth( width === 500 ? 450 : 500);
     };
 
     const motionSpringSetting = { stiffness: 105, daping: 40, precision: 30};
