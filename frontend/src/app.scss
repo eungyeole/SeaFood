@@ -1,5 +1,41 @@
 $red: #fa5252;
 
-.test {
-    background-color: red;
+body{
+    margin: 0;
+    margin: 0 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.search{
+    background: #F8F8F7;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    border: none;
+    width: 480px;
+    height: 30px;
+    outline: none;
+    background: #F8F8F7;
+}
+.profile-img{
+    border-radius: 50%;
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 32px;
 }
