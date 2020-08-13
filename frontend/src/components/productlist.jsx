@@ -8,7 +8,7 @@ const Productlist = memo( () => {
         <>
             <div className="product">
                 <ul className="product-type">
-                    <li className="product-home">HOME<i class="fas fa-home"></i></li>
+                    <li className="product-home">HOME<i className="fas fa-home"></i></li>
                     <li>CRAB</li>
                     <li>FISH</li>
                     <li>SHRIMP</li>
@@ -16,6 +16,7 @@ const Productlist = memo( () => {
                 <div className="product-list">
                     <div className="product-title">HOME</div>
                     <div className="product-desc">설명</div>
+                    <div className=""></div>
                 </div>
             </div>
         </>

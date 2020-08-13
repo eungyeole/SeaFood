@@ -86,12 +86,9 @@ section{
         flex-direction: column;
     }
     &-title{
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bold;
-        font-style: italic;
-    }
-    &-desc{
-
+        font-family: 'Gugi', cursive;
     }
     & li{
         width: 240px;
