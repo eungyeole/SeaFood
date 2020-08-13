@@ -2,7 +2,7 @@ const React = require('react');
 const { useState, useRef, memo } = React;
 require('../app.scss');
 
-const Header = memo( () => {
+const Slide = memo( () => {
 
     return (
         <>
@@ -13,4 +13,4 @@ const Header = memo( () => {
     );
 });
 
-module.exports = Header;
+module.exports = Slide;
