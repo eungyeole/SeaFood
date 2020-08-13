@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Noto+Sans+KR&display=swap');
+*{
+    box-sizing : border-box;
+}
 body{
     margin: 0;
     margin: 0 140px;
@@ -11,11 +14,16 @@ header{
     justify-content: space-between;
 
 }
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .header-menu{
     list-style: none;
     display: flex;
     align-items: center;
-    & span{color: #050505; font-size: 16px;}
+    & span{color: #050505; font-size: 16px; white-space:nowrap;}
     & li{ display: flex;align-items: center;height: 14px; padding: 0 16px;border-right: 1px solid #ddd;}
 }
 .logo {
@@ -64,6 +72,45 @@ header{
     border-radius: 25px;
     background: pink;
 }
-.productlist{
+.product{
     display: flex;
+    margin-top: 16px;
+    &-type{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &-list{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title{
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    &-desc{
+
+    }
+    & li{
+        width: 240px;
+        padding: 0 15px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        background: #F6F6F6;
+        margin-bottom: 10px;
+    }
+    &-home{
+        width: 240px !important;
+        height: 60px !important;
+    }
 }
+.click{
+    background: #9175DB !important;
+    color: #F5D2ED !important
+}
+//#6eb5ff

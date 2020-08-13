@@ -11,8 +11,10 @@ const App = memo( () => {
         <>
             <div>
                 <Header></Header>
-                <Slide></Slide>
-                <Productlist></Productlist>
+                <section>
+                    <Slide></Slide>
+                    <Productlist></Productlist>
+                </section>
             </div>
         </>
     );
