@@ -12,8 +12,10 @@ const Productlist = memo( () => {
                     <li>CRAB</li>
                     <li>FISH</li>
                     <li>SHRIMP</li>
+                    <li>SHRIMP</li>
+                    <li>SHRIMP</li>
                 </ul>
-                <div className="product-list">
+                <div className="product-wrapper">
                     <div className="product-title">HOME</div>
                     <div className="product-desc">설명</div>
                     <div className=""></div>
