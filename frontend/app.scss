@@ -121,7 +121,16 @@ section{
 .next{
     position: relative;
     right: 0;
-    left: calc( 100% - 12px );
+    left: calc( 100% - 24px );
+    top: -200px;
+    width: 10px;
+    background: black;
+    outline: none;
+    border: none;
+    height: 50px;
+}
+.prev{
+    position: relative;
     top: -200px;
     width: 10px;
     background: black;
