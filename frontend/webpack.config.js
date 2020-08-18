@@ -49,8 +49,13 @@ module.exports = {
         new webpack.LoaderOptionsPlugin({ debug: true }),
     ],
     output: {
-        path: path.join(__dirname, 'src/components'),
-        filename: 'App.jsx',
-        publicPath: '/src/components/',
-    }, 
+        path: path.join(__dirname, '/components'),
+        filename: 'ap.js',
+        publicPath: '/components/',
+    },
+    devServer: {
+        inline: true,
+        port: 8080,
+        historyApiFallback: true
+    },
 };
