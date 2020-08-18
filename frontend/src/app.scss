@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Noto+Sans+KR&display=swap');
+*{
+    box-sizing : border-box;
+}
+body{
+    margin: 0;
+    margin: 0 140px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+header{
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    span{color: #050505; font-size: 16px; white-space:nowrap;}
+    li{ display: flex;align-items: center;height: 14px; padding: 0 16px;border-right: 1px solid #ddd;}
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Gugi', cursive;
+}
+.search{
+    background: #F8F8F7;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    input{ 
+        border: none;
+        padding-left: 20px;
+        width: 380px;
+        height: 30px;
+        outline: none;
+        background: #F8F8F7;
+    }
+    i {
+        color: gray;
+        margin-right: 10px;
+    }
+}
+.logout{
+    color: #ff5774 !important;
+}
+.profile-img{
+    border-radius: 50%;
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 32px;
+}
+.slide{
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+    background: pink;
+}
+.product{
+    display: flex;
+    margin-top: 16px;
+    &-type{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 350px;
+        overflow: scroll;
+    }
+    &-type::-webkit-scrollbar 
+    { 
+        width: 0 !important 
+    }
+    &-wrapper{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title{
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Gugi', cursive;
+    }
+    li{
+        width: 240px;
+        padding: 0 15px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        background: #F6F6F6;
+        margin-bottom: 10px;
+    }
+    &-home{
+        width: 240px !important;
+        height: 60px !important;
+    }
+}
+.click{
+    background: #9175DB !important;
+    color: #F5D2ED !important
+}
+//#6eb5ff
