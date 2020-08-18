@@ -1,8 +1,6 @@
 const React = require('react');
 const { useState, useRef, memo } = React;
 require('../app.scss');
-
-
 const Slide = memo( () => {
     Next=()=>{
         let last=document.getElementsByClassName("slide").length;
@@ -21,6 +19,9 @@ const Slide = memo( () => {
             }
         }
     }
+    const Timer=setInterval(()=>{
+        Next();
+    },10000);
     return (
         <>
             <div className="slide-wrapper">
