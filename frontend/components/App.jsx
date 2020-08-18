@@ -5,18 +5,18 @@ const Header = require('./Header');
 const Slide = require('./Slide');
 const Productlist = require('./productlist');
 
+const { BrowserRouter } = require('react-router-dom')
+
 const App = memo( () => {
 
     return (
-        <>
-            <div>
-                <Header></Header>
-                <section>
-                    <Slide></Slide>
-                    <Productlist></Productlist>
-                </section>
-            </div>
-        </>
+        <BrowserRouter>
+            <Header></Header>
+            <section>
+                <Slide></Slide>
+                <Productlist></Productlist>
+            </section>
+        </BrowserRouter>
     );
 });
 
