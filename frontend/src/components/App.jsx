@@ -4,6 +4,7 @@ require('../app.scss');
 const Header = require('./Header');
 const Slide = require('./Slide');
 const Productlist = require('./productlist');
+const Link = require('react-router-dom').Link;   
 
 const App = memo( () => {
 

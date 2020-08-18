@@ -48,6 +48,7 @@ module.exports = {
     plugins: [
         new webpack.LoaderOptionsPlugin({ debug: true }),
     ],
+  
     output: {
         path: path.join(__dirname, 'src/components'),
         filename: 'App.jsx',

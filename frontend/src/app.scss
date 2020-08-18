@@ -24,6 +24,7 @@ section{
     display: flex;
     align-items: center;
     span{color: #050505; font-size: 16px; white-space:nowrap;}
+    span a{color: #050505; font-size: 16px; white-space:nowrap; text-decoration: none;}
     li{ display: flex;align-items: center;height: 14px; padding: 0 16px;border-right: 1px solid #ddd;}
 }
 .logo {
@@ -88,7 +89,7 @@ section{
     &-type::-webkit-scrollbar 
     { 
         width: 0 !important 
-    }
+    }   
     &-wrapper{
         margin-left: 20px;
         display: flex;

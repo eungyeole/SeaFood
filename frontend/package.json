@@ -2,7 +2,7 @@
   "name": "seafood",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "webpack-dev-server --hot"
   },
@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-motion": "^0.5.2",
+    "react-router-dom": "^5.2.0",
     "sass-loader": "^9.0.3"
   },
   "devDependencies": {
