@@ -2,7 +2,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const { hot } = require('react-hot-loader/root');
 
-const App = require('./src/components/App');
-const Hot = hot(App);
+const Index = require('./components/Index.jsx');
+const Hot = hot(Index);
 
 ReactDOM.render(<Hot />, document.querySelector('#root'));

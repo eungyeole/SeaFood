@@ -1,6 +1,7 @@
 const React = require('react');
 const { useState, useRef, memo } = React;
 require('../app.scss');
+const Link = require('react-router-dom').Link;   
 const { Motion, spring } = require('react-motion');
 
 const Header = memo( () => {
@@ -34,8 +35,8 @@ const Header = memo( () => {
                 </Motion>
                 <ul className="header-menu">
                     <li><i className="far fa-heart"></i></li>
-                    <li><span>안은결님</span></li>
-                    <li><span className="logout">로그아웃</span></li>
+                    <li><span><Link to="/header">로그인</Link></span></li>
+                    <li><span className="logout">회원가입</span></li>
                 </ul>
             </header>
         </>
