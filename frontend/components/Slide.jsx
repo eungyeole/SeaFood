@@ -7,6 +7,10 @@ const Slide = memo( () => {
         for(let i=0;i<last;i++)
         {
             if(document.getElementsByClassName("slide")[i].style.display=='block'){
+                clearInterval(Timer);
+                Timer=setInterval(()=>{
+                    Next();
+                },5000);
                 document.getElementsByClassName("slide")[i].style.display='none';
                 if(i+1>last-1)
                 {
@@ -24,6 +28,10 @@ const Slide = memo( () => {
         for(let i=0;i<last;i++)
         {
             if(document.getElementsByClassName("slide")[i].style.display=='block'){
+                clearInterval(Timer);
+                Timer=setInterval(()=>{
+                    Next();
+                },5000);
                 document.getElementsByClassName("slide")[i].style.display='none';
                 if(i-1==-1)
                 {
@@ -36,7 +44,7 @@ const Slide = memo( () => {
             }
         }
     }
-    const Timer=setInterval(()=>{
+    let Timer=setInterval(()=>{
         Next();
     },5000);
     return (
