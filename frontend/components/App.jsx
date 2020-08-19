@@ -1,6 +1,6 @@
 const React = require('react');
 const { useState, useRef, memo } = React;
-require('../app.scss');
+require('../src/app.scss');
 const Header = require('./Header');
 const Slide = require('./Slide');
 const Productlist = require('./productlist');
@@ -11,11 +11,13 @@ const App = memo( () => {
 
     return (
         <BrowserRouter>
-            <Header></Header>
-            <section>
-                <Slide></Slide>
-                <Productlist></Productlist>
-            </section>
+            <div className="bodyWrapperApp">
+                <Header></Header>
+                <section>
+                    <Slide></Slide>
+                    <Productlist></Productlist>
+                </section>
+            </div>
         </BrowserRouter>
     );
 });
