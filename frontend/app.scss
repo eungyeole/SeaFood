@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     box-sizing : border-box;
 }
@@ -18,6 +19,9 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+ul{
+    list-style: none;
 }
 .header-menu{
     list-style: none;
@@ -84,11 +88,11 @@ section{
     display: flex;
     margin-top: 16px;
     &-type{
-        list-style: none;
         padding: 0;
         margin: 0;
     }
     &-list{
+        width: 100%;
         margin-left: 20px;
         display: flex;
         flex-direction: column;
@@ -98,7 +102,43 @@ section{
         font-weight: bold;
         font-family: 'Gugi', cursive;
     }
-    li{
+    &-menu{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-align{
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    &-align li{
+        margin-right: 20px;
+        width: 140px;
+        padding: 0 10px;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 13px;
+        color: #0b0b0b;
+        font-family: 'Gugi', cursive;
+        font-weight: 600;
+        border: 4px solid #f8f8f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-details{
+        float: right;
+        width: 45px;
+        height: 45px;
+        background: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white
+    }
+    &-type li{
         width: 240px;
         padding: 0 15px;
         height: 80px;

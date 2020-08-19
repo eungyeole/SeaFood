@@ -1,4 +1,5 @@
 const React = require('react');
+const { Motion, spring } = require('react-motion');
 const { useState, useRef, memo } = React;
 require('../app.scss');
 const Slide = memo( () => {
@@ -38,7 +39,7 @@ const Slide = memo( () => {
     }
     const Timer=setInterval(()=>{
         Next();
-    },10000);
+    },5000);
     return (
         <>
             <div className="slide-wrapper">

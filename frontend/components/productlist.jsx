@@ -16,7 +16,16 @@ const Productlist = memo( () => {
                 <div className="product-list">
                     <div className="product-title">HOME</div>
                     <div className="product-desc">설명</div>
-                    <div className=""></div>
+                    <div className="product-menu">
+                        <ul className="product-align">
+                            <li><i className="fas fa-sort-amount-down"></i>Sort</li>
+                            <li>HOT</li>
+                            <li>Cumulative</li>
+                            <li>Lowest</li>
+                            <li>Highest</li>
+                        </ul>
+                        <div className="product-details"><i className="fas fa-caret-down"></i></div>
+                    </div>
                 </div>
             </div>
         </>
