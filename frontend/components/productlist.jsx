@@ -1,8 +1,8 @@
 const React = require('react');
 const { useState, useRef, memo } = React;
+const axios = require('axios');
 
 const Productlist = memo( () => {
-
     return (
         <>
             <div className="product">
