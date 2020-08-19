@@ -131,6 +131,7 @@ ul{
     &-align li{
         margin-right: 20px;
         width: 140px;
+        cursor: pointer;
         padding: 0 10px;
         height: 45px;
         border-radius: 10px;
@@ -147,6 +148,7 @@ ul{
         float: right;
         width: 45px;
         height: 45px;
+        cursor: pointer;
         background: black;
         border-radius: 10px;
         display: flex;
@@ -163,6 +165,7 @@ ul{
         justify-content: space-between;
         border-radius: 15px;
         background: #F6F6F6;
+        cursor: pointer;
         margin-bottom: 10px;
     }
     &-home{
@@ -180,19 +183,23 @@ ul{
     left: calc( 100% - 24px );
     top: -200px;
     width: 10px;
-    background: black;
+    cursor: pointer;
+    background: transparent;
     outline: none;
     border: none;
     height: 50px;
+    opacity: 0.5;
 }
 .prev{
     position: relative;
     top: -200px;
     width: 10px;
-    background: black;
+    cursor: pointer;
+    background: transparent;
     outline: none;
     border: none;
     height: 50px;
+    opacity: 0.5;
 }
 .blue{
     width: 100%;
@@ -213,5 +220,13 @@ ul{
     width: 100%;
     height: 100%;
     background: orange;
+}
+.fa-chevron-right{
+    position: relative;
+    right: 10;
+    font-size: 18px;
+}
+.fa-chevron-left{
+    font-size: 18px;
 }
 //#6eb5ff
