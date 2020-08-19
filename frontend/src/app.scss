@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     box-sizing : border-box;
 }
@@ -21,6 +22,9 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+ul{
+    list-style: none;
 }
 .header-menu{
     list-style: none;
@@ -71,22 +75,43 @@ section{
     border-radius: 50%;
     width: 32px;
 }
-.slide{
+.slide-wrapper{
     margin-top: 20px;
     width: 100%;
     height: 350px;
     border-radius: 25px;
     background: pink;
 }
+.slide{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 .product{
     display: flex;
     margin-top: 16px;
     &-type{
-        list-style: none;
         padding: 0;
         margin: 0;
     }
     &-list{
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &-list li{
+        margin:10px 4px;
+        background: black;
+        width: calc( 25% - 8px );
+        height: 450px;
+        border-radius: 20px;
+    }
+    &-wrapper{
+        width: 100%;
         margin-left: 20px;
         display: flex;
         flex-direction: column;
@@ -96,7 +121,45 @@ section{
         font-weight: bold;
         font-family: 'Gugi', cursive;
     }
-    li{
+    &-menu{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-align{
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    &-align li{
+        margin-right: 20px;
+        width: 140px;
+        cursor: pointer;
+        padding: 0 10px;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 13px;
+        color: #0b0b0b;
+        font-family: 'Gugi', cursive;
+        font-weight: 600;
+        border: 4px solid #f8f8f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-details{
+        float: right;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        background: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white
+    }
+    &-type li{
         width: 240px;
         padding: 0 15px;
         height: 80px;
@@ -105,6 +168,7 @@ section{
         justify-content: space-between;
         border-radius: 15px;
         background: #F6F6F6;
+        cursor: pointer;
         margin-bottom: 10px;
     }
     &-home{
@@ -115,5 +179,57 @@ section{
 .click{
     background: #9175DB !important;
     color: #F5D2ED !important
+}
+.next{
+    position: relative;
+    right: 0;
+    left: calc( 100% - 24px );
+    top: -200px;
+    width: 10px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    opacity: 0.5;
+}
+.prev{
+    position: relative;
+    top: -200px;
+    width: 10px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    opacity: 0.5;
+}
+.blue{
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+.red{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.yellow{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+.orange{
+    width: 100%;
+    height: 100%;
+    background: orange;
+}
+.fa-chevron-right{
+    position: relative;
+    right: 10;
+    font-size: 18px;
+}
+.fa-chevron-left{
+    font-size: 18px;
 }
 //#6eb5ff
