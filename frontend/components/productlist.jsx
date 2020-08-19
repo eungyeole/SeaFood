@@ -13,7 +13,7 @@ const Productlist = memo( () => {
                     <li>FISH</li>
                     <li>SHRIMP</li>
                 </ul>
-                <div className="product-list">
+                <div className="product-wrapper">
                     <div className="product-title">HOME</div>
                     <div className="product-desc">설명</div>
                     <div className="product-menu">
@@ -26,6 +26,22 @@ const Productlist = memo( () => {
                         </ul>
                         <div className="product-details"><i className="fas fa-caret-down"></i></div>
                     </div>
+                    <ul className="product-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </>

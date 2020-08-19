@@ -92,6 +92,22 @@ ul{
         margin: 0;
     }
     &-list{
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &-list li{
+        margin:10px 4px;
+        background: black;
+        width: calc( 25% - 8px );
+        height: 450px;
+        border-radius: 20px;
+    }
+    &-wrapper{
         width: 100%;
         margin-left: 20px;
         display: flex;
