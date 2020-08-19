@@ -3,7 +3,7 @@ const { useState, memo } = React
 const { BrowserRouter } = require('react-router-dom')
 const { Motion, spring } = require('react-motion');
 
-require('../src/login.scss')
+require('../src/login.scoped.scss')
 
 const Login = memo( () => {
     const [id, setId] = useState('')
@@ -11,6 +11,8 @@ const Login = memo( () => {
     const [position, setPosition] = useState(120)
     
     const MotionOption = { stiffness: 60, daping: 50, precision: 5 }
+
+    document.body.style.overflow = 'hidden'
 
     const onClickLogin = () => {
         if(id==='') {

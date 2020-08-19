@@ -1,7 +1,6 @@
 const React = require('react');
 const { Motion, spring } = require('react-motion');
 const { useState, useRef, memo } = React;
-require('../src/app.scss');
 const Slide = memo( () => {
     Next=()=>{
         let last=document.getElementsByClassName("slide").length;

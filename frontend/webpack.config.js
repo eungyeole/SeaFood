@@ -28,6 +28,7 @@ module.exports = {
                 plugins: [
                     '@babel/plugin-proposal-class-properties',
                     'react-hot-loader/babel',
+                    'babel-plugin-react-scoped-css'
                 ],
             }
         },
@@ -36,13 +37,24 @@ module.exports = {
             use: ['style-laoder', 'css-loader']
         },
         {
-            test: /\.scss/,
-            loaders: [
-                require.resolve( 'style-loader' ),
-                require.resolve( 'css-loader' ),
-                require.resolve( 'sass-loader' )
-            ]
-        }
+            test: /\.(sc|c|sa)ss$/,
+            use: [
+              {
+                loader: 'style-loader',
+              },
+              {
+                loader: 'css-loader',
+                options: {
+                  sourceMap: true,
+                  importLoaders: 2,
+                },
+              },
+              { loader: 'scoped-css-loader' },
+              {
+                loader: 'sass-loader',
+              },
+            ],
+          },
     ],
     },
     plugins: [

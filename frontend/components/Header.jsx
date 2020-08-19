@@ -1,6 +1,5 @@
 const React = require('react');
 const { useState, useRef, memo } = React;
-require('../src/app.scss');
 const { Motion, spring } = require('react-motion');
 
 const Header = memo( () => {
