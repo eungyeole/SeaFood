@@ -27,19 +27,7 @@ const Productlist = memo( () => {
                     </div>
                     <ul className="product-list">
                         <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                
                     </ul>
                 </div>
             </div>
