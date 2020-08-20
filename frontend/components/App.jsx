@@ -4,7 +4,6 @@ require('../src/app.scoped.scss');
 const Header = require('./Header');
 const Slide = require('./Slide');
 const Productlist = require('./productlist');
-
 const { BrowserRouter } = require('react-router-dom')
 
 const App = memo( () => {
