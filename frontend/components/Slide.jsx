@@ -7,7 +7,6 @@ const Slide = memo( () => {
     const motionOption = { stiffness: 60, daping: 20, precision: 0 }
 
     const Next=()=>{
-        console.log(state);
         switch(state) {
             case 0:
                 setState(1)

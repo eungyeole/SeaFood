@@ -9,6 +9,7 @@
   "author": "성예인, 안은결",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
