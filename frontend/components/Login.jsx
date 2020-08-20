@@ -110,7 +110,7 @@ const Login = memo( () => {
                         </div>
                         <div className="loginBodyWrapper">
                             <div className="loginBody">
-                                <p className="pTitle">회원가입</p>
+                                <p className="pTitle1">회원가입</p>
                                 <div className="loginBodyInner1"> 
                                     <div>
                                         <p className="pName">아이디</p>
