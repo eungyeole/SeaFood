@@ -10,7 +10,7 @@ const Login = memo( () => {
     const [password, setPassword] = useState('')
     const [position, setPosition] = useState(120)
     
-    const MotionOption = { stiffness: 30, daping: 30, precision: 0 }
+    const MotionOption = { stiffness: 40, daping: 25, precision: 0 }
 
     document.body.style.overflow = 'hidden'
 
@@ -33,14 +33,14 @@ const Login = memo( () => {
             document.getElementById('b2').style.display = 'flex'
             setTimeout(() => {
                 document.getElementById('b1').style.display = 'none'
-            }, 1000)
+            }, 2000)
         }
         else {
             setPosition(120)
             document.getElementById('b1').style.display = 'flex'
             setTimeout(() => {
                 document.getElementById('b2').style.display = 'none'
-            }, 1000)
+            }, 2000)
         }
     }
 
