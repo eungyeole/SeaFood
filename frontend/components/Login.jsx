@@ -1,10 +1,9 @@
 const React = require('react')
 const { useState, memo } = React
 const { BrowserRouter } = require('react-router-dom')
+require('../src/login.scoped.scss')
 
 const Login = memo( () => {
-<<<<<<< Updated upstream
-=======
     const [id, setId] = useState('')
     const [password, setPassword] = useState('')
     const [position, setPosition] = useState(120)
@@ -54,15 +53,13 @@ const Login = memo( () => {
         }
         setId(e.target.value)
     }
->>>>>>> Stashed changes
 
     return (
         <BrowserRouter>
             <div>
                 asdwa
             </div>
-<<<<<<< Updated upstream
-=======
+
             <Motion defaultStyle={{left: 3000}} style={{left: spring(position, MotionOption)}}>
             {
                 (style) => (<div style={style} className="bodyWrapper">
@@ -133,7 +130,6 @@ const Login = memo( () => {
                 )
             }
             </Motion>
->>>>>>> Stashed changes
         </BrowserRouter>
     )
 })

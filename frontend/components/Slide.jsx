@@ -1,17 +1,8 @@
 const React = require('react');
-<<<<<<< Updated upstream
 const { useState, useRef, memo } = React;
-require('../app.scss');
-
-const Slide = memo( () => {
-
-    return (
-        <>
-            <div className="slide">
-                
-=======
 const { Motion, spring } = require('react-motion');
 const { useState, useRef, memo } = require('react');
+
 const Slide = memo( () => {
     const [state, setState] = useState(0)
 
@@ -101,10 +92,9 @@ const Slide = memo( () => {
                 </div>
                 <button className="prev" onClick={Prev}><i className="fas fa-chevron-left"></i></button>
                 <button className="next" onClick={Next}><i className="fas fa-chevron-right"></i></button>
->>>>>>> Stashed changes
             </div>
         </>
     );
 });
 
-module.exports = Slide;
+module.exports = Slide

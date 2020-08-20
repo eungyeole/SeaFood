@@ -4,14 +4,11 @@
 }
 body{
     margin: 0;
-<<<<<<< Updated upstream:frontend/src/app.scss
-=======
     font-family: 'Do Hyeon', sans-serif;
     overflow: scroll;
 }
 
 .bodyWrapperApp {
->>>>>>> Stashed changes:frontend/src/app.scoped.scss
     margin: 0 140px;
     font-family: 'Do Hyeon', sans-serif;
 }
@@ -84,15 +81,14 @@ section{
     background: pink;
     position: relative;
 }
-<<<<<<< Updated upstream:frontend/src/app.scss
-=======
+
 .slide{
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 25px;
 }
->>>>>>> Stashed changes:frontend/src/app.scoped.scss
+
 .product{
     display: flex;
     margin-top: 16px;
@@ -137,8 +133,7 @@ section{
     background: #9175DB !important;
     color: #F5D2ED !important
 }
-<<<<<<< Updated upstream:frontend/src/app.scss
-=======
+
 .next{
     position: absolute;
     right: 5px;
@@ -220,5 +215,4 @@ section{
 .fa-chevron-left{
     font-size: 18px;
 }
->>>>>>> Stashed changes:frontend/src/app.scoped.scss
 //#6eb5ff
