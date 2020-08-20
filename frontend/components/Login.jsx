@@ -29,10 +29,18 @@ const Login = memo( () => {
 
     const onClickSignup = () => {
         if(position === 120) {
-            setPosition(3000)
+            setPosition(2000)
+            document.getElementById('b2').style.display = 'flex'
+            setTimeout(() => {
+                document.getElementById('b1').style.display = 'none'
+            }, 1000)
         }
         else {
             setPosition(120)
+            document.getElementById('b1').style.display = 'flex'
+            setTimeout(() => {
+                document.getElementById('b2').style.display = 'none'
+            }, 1000)
         }
     }
 
@@ -60,9 +68,9 @@ const Login = memo( () => {
         <BrowserRouter>
             <div className="background">
             </div>
-            <Motion defaultStyle={{left: 3000}} style={{left: spring(position, MotionOption)}}>
+            <Motion defaultStyle={{left: 2000}} style={{left: spring(position, MotionOption)}}>
             {
-                (style) => (<div style={style} className="bodyWrapper">
+                (style) => (<div style={style} id="b1" className="bodyWrapper">
                     <div className="loginWrapper">
                         <div className="loginTitle">
                             <a href="/">홈으로</a>
@@ -92,10 +100,10 @@ const Login = memo( () => {
                 </div>)
             }
             </Motion>
-            <Motion style={{left: spring(position === 3000 ? 120 : 3000, MotionOption)}}>
+            <Motion style={{left: spring(position === 2000 ? 120 : 2000, MotionOption)}}>
             {
-                ({left}) => (
-                <div style={{left}} className="bodyWrapper1">
+                (style) => (
+                <div style={style} id="b2" className="bodyWrapper1">
                     <div className="loginWrapper">
                         <div className="loginTitle">
                             <a href="/">홈으로</a>

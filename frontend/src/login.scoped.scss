@@ -19,7 +19,7 @@
 }
 
 .bodyWrapper1 {
-    display: flex;
+    display: none;
     width: auto;
     height: 740px;
     position: absolute;
@@ -28,6 +28,7 @@
     transform: translateY(-50%);
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 24px 34px rgba($color: #000000, $alpha: 0.2);
 }
 
 .loginWrapper {
