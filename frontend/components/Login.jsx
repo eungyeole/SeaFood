@@ -10,7 +10,7 @@ const Login = memo( () => {
     const [password, setPassword] = useState('')
     const [position, setPosition] = useState(120)
     
-    const MotionOption = { stiffness: 60, daping: 50, precision: 5 }
+    const MotionOption = { stiffness: 30, daping: 30, precision: 0 }
 
     document.body.style.overflow = 'hidden'
 
