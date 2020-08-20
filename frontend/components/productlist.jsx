@@ -37,8 +37,8 @@ const Productlist = memo( () => {
                                 <span className="product-tag">구매 694</span>
                             </div>
                             <div className="button-box">
-                                <div className="product-button"><i class="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i class="fas fa-shopping-cart"></i></div>
+                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
+                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
                             </div>
                         </li>
                         <li>
@@ -54,8 +54,8 @@ const Productlist = memo( () => {
                                 <span className="product-tag">구매 694</span>
                             </div>
                             <div className="button-box">
-                                <div className="product-button"><i class="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i class="fas fa-shopping-cart"></i></div>
+                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
+                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
                             </div>
                         </li>
                         <li>
@@ -71,8 +71,8 @@ const Productlist = memo( () => {
                                 <span className="product-tag">구매 694</span>
                             </div>
                             <div className="button-box">
-                                <div className="product-button"><i class="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i class="fas fa-shopping-cart"></i></div>
+                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
+                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
                             </div>
                         </li>
                         <li>
@@ -88,8 +88,8 @@ const Productlist = memo( () => {
                                 <span className="product-tag">구매 694</span>
                             </div>
                             <div className="button-box">
-                                <div className="product-button"><i class="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i class="fas fa-shopping-cart"></i></div>
+                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
+                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
                             </div>
                         </li>
 
