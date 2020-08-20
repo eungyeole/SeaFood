@@ -4,6 +4,14 @@
 }
 body{
     margin: 0;
+<<<<<<< Updated upstream:frontend/src/app.scss
+=======
+    font-family: 'Do Hyeon', sans-serif;
+    overflow: scroll;
+}
+
+.bodyWrapperApp {
+>>>>>>> Stashed changes:frontend/src/app.scoped.scss
     margin: 0 140px;
     font-family: 'Do Hyeon', sans-serif;
 }
@@ -74,7 +82,17 @@ section{
     height: 350px;
     border-radius: 25px;
     background: pink;
+    position: relative;
 }
+<<<<<<< Updated upstream:frontend/src/app.scss
+=======
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+}
+>>>>>>> Stashed changes:frontend/src/app.scoped.scss
 .product{
     display: flex;
     margin-top: 16px;
@@ -119,4 +137,88 @@ section{
     background: #9175DB !important;
     color: #F5D2ED !important
 }
+<<<<<<< Updated upstream:frontend/src/app.scss
+=======
+.next{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    opacity: 0.5;
+    z-index: 1000;
+}
+.prev{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    opacity: 0.5;
+    z-index: 100;
+}
+.blue{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 99;
+    opacity: 0;
+}
+.red{
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 99;
+    opacity: 0;
+}
+.yellow{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 99;
+    opacity: 0;
+}
+.orange{
+    width: 100%;
+    height: 100%;
+    background: orange;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 99;
+    opacity: 0;
+}
+.green{
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 99;
+    opacity: 0;
+}
+.fa-chevron-right{
+    position: relative;
+    right: 10;
+    font-size: 18px;
+}
+.fa-chevron-left{
+    font-size: 18px;
+}
+>>>>>>> Stashed changes:frontend/src/app.scoped.scss
 //#6eb5ff
