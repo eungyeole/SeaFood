@@ -1,16 +1,14 @@
 const React = require('react');
-const { useState, useRef, memo } = React;
+const { useState, useRef, memo, useEffect } = React;
 const axios = require('axios');
-
 const Productlist = memo( () => {
+    const [state, setState] = useState("home");
     return (
         <>
             <div className="product">
                 <ul className="product-type">
-                    <li className="product-home">HOME<i className="fas fa-home"></i></li>
-                    <li>CRAB</li>
+                    <li className="product-home" onClick={()=> setState(event.target.innerText)}>HOME<i className="fas fa-home"></i></li>
                     <li>FISH</li>
-                    <li>SHRIMP</li>
                 </ul>
                 <div className="product-wrapper">
                     <div className="product-title">HOME</div>
@@ -27,7 +25,6 @@ const Productlist = memo( () => {
                     </div>
                     <ul className="product-list">
                         <li></li>
-                
                     </ul>
                 </div>
             </div>
