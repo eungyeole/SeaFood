@@ -1,17 +1,46 @@
 const React = require('react');
 const { useState, useRef, memo, useEffect } = React;
 const axios = require('axios');
+let data = JSON.stringify({"password":"1234"});
+const Productcard = require('./productcard');
+const Producttags = require('./producttags');
 const Productlist = memo( () => {
-    const [state, setState] = useState("home");
+    const [state, setState] = useState("HOME");
+    const [productdata, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
+    
+    const callapi=(stateapi)=>{
+        var config = {
+            method: 'get',
+            url: `http://127.0.0.1:5000/product?tags=${stateapi}`,
+            headers: { 
+            'Content-Type': 'application/json'
+            },
+            data : data
+        }; 
+        setLoading(true);
+        setData(null);
+        axios(config)
+        .then(function (response) {
+            setData(response.data);
+            setState(stateapi);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        setLoading(false);
+    }
+    useEffect(()=>{
+        callapi(state);
+    },[]);
+    if(loading) return (<div>로딩중.</div>);
+    if(!productdata) return (null);
     return (
         <>
             <div className="product">
-                <ul className="product-type">
-                    <li className="product-home" onClick={()=> setState(event.target.innerText)}>HOME<i className="fas fa-home"></i></li>
-                    <li>FISH</li>
-                </ul>
+                <Producttags state={state} setState={setState} callapi={callapi}></Producttags>
                 <div className="product-wrapper">
-                    <div className="product-title">HOME</div>
+                    <div className="product-title">{state}</div>
                     <div className="product-desc">설명</div>
                     <div className="product-menu">
                         <ul className="product-align">
@@ -24,75 +53,7 @@ const Productlist = memo( () => {
                         <div className="product-details"><i className="fas fa-caret-down"></i></div>
                     </div>
                     <ul className="product-list">
-                        <li>
-                            <div className="image-box">
-                                <img src="https://us.123rf.com/450wm/bestfotostudio/bestfotostudio1509/bestfotostudio150900150/45464411-타이거-새우-흰색-배경에-격리-된-새우-해물.jpg?ver=6" alt=""/>
-                            </div>
-                            <div className="information-box">
-                                <div className="price-box">
-                                    <span className="product-price">54,900</span>
-                                    <span className="product-unit">원</span>
-                                </div>
-                                <div className="product-name">45464411-타이거-새우</div>
-                                <span className="product-tag">구매 694</span>
-                            </div>
-                            <div className="button-box">
-                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="image-box">
-                                <img src="https://us.123rf.com/450wm/bestfotostudio/bestfotostudio1509/bestfotostudio150900150/45464411-타이거-새우-흰색-배경에-격리-된-새우-해물.jpg?ver=6" alt=""/>
-                            </div>
-                            <div className="information-box">
-                                <div className="price-box">
-                                    <span className="product-price">54,900</span>
-                                    <span className="product-unit">원</span>
-                                </div>
-                                <div className="product-name">45464411-타이거-새우</div>
-                                <span className="product-tag">구매 694</span>
-                            </div>
-                            <div className="button-box">
-                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="image-box">
-                                <img src="https://us.123rf.com/450wm/bestfotostudio/bestfotostudio1509/bestfotostudio150900150/45464411-타이거-새우-흰색-배경에-격리-된-새우-해물.jpg?ver=6" alt=""/>
-                            </div>
-                            <div className="information-box">
-                                <div className="price-box">
-                                    <span className="product-price">54,900</span>
-                                    <span className="product-unit">원</span>
-                                </div>
-                                <div className="product-name">45464411-타이거-새우</div>
-                                <span className="product-tag">구매 694</span>
-                            </div>
-                            <div className="button-box">
-                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="image-box">
-                                <img src="https://us.123rf.com/450wm/bestfotostudio/bestfotostudio1509/bestfotostudio150900150/45464411-타이거-새우-흰색-배경에-격리-된-새우-해물.jpg?ver=6" alt=""/>
-                            </div>
-                            <div className="information-box">
-                                <div className="price-box">
-                                    <span className="product-price">54,900</span>
-                                    <span className="product-unit">원</span>
-                                </div>
-                                <div className="product-name">45464411-타이거-새우</div>
-                                <span className="product-tag">구매 694</span>
-                            </div>
-                            <div className="button-box">
-                                <div className="product-button"><i className="far fa-credit-card"></i> 구매하기</div>
-                                <div className="product-button cok"><i className="fas fa-shopping-cart"></i></div>
-                            </div>
-                        </li>
-
+                        {productdata.map((i)=>{return <Productcard pid={i[0]} times={i[3]} price={i[2]} img={i[4]} name={i[1]}></Productcard>})}
                     </ul>
                 </div>
             </div>

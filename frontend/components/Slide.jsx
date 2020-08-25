@@ -93,6 +93,7 @@ const Slide = memo( () => {
                 </div>
                 <button className="prev" onClick={Prev}><i className="fas fa-chevron-left"></i></button>
                 <button className="next" onClick={Next}><i className="fas fa-chevron-right"></i></button>
+                
             </div>
         </>
     );
