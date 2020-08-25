@@ -41,6 +41,8 @@ const Login = memo( () => {
             setTimeout(() => {
                 document.getElementById('b2').style.display = 'none'
             }, 2000)
+            document.querySelector('#BoxPs').style.borderBottom = '2px solid #8f8f8f';
+            document.querySelector('#BoxId').style.borderBottom = '2px solid #8f8f8f';
         }
     }
 
@@ -124,7 +126,7 @@ const Login = memo( () => {
                                         <p className="pName">비밀번호 확인</p>
                                         <input value={password} id="BoxPs" className="loginBodyBox" type="password" onChange={onChangePassword} />
                                     </div>
-                                    <button className="loginBodyButton">회원가입</button>
+                                    <button className="loginBodyButton">Sign Up</button>
                                 </div>
                                 <p className="gotoSignup">
                                     아이디가 있으십니까?
