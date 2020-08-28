@@ -17,7 +17,7 @@ const Header = memo( () => {
     return (
         <>
             <header>
-                <div className="logo">
+                <div className="logo" onClick={()=>{location.href="/"}}>
                    SeaFood
                 </div>
                 <Motion style={{ width: spring(width, motionSpringSetting) }}>
