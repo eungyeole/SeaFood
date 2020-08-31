@@ -30,6 +30,23 @@ def product_tags():
         "CRAB",
         "FISH"
     )
+@app.route('/search')
+def search():
+    param = jsonify(
+        error="Parameter not found"
+    )
+    id = request.args.get('id', param)
+    conn = get_connection()
+    sql = f"""SELECT * FROM product WHERE id='{id}'"""
+    cursor = conn.cursor()
+    cursor.execute(sql)
+    response = cursor.fetchall()
+    json = jsonify(
+        response
+    )
+    conn.commit()
+    conn.close()
+    return json
 @app.route('/product')
 def product():
     check = jsonify(
